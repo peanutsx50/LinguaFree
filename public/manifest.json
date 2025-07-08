@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LinguaFree",
+  "version": "1.0",
+  "description": "Save vocabulary and sentences from YouTube captions and export them as flashcards to anki or Quizlet",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "LinguaFree"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

@@ -10,8 +10,8 @@ import { BookIcon } from "lucide-react";
 
 export default function DashboardPage() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-2 gap-4 w-full">
-      <Card className="">
+    <div className="flex flex-col gap-2 w-full">
+      <Card className="flex-1">
         <CardHeader>
           <CardTitle>Words Saved</CardTitle>
           <CardAction>
@@ -26,7 +26,7 @@ export default function DashboardPage() {
         </CardFooter>
       </Card>
 
-      <Card className="">
+      <Card className="flex-1">
         <CardHeader>
           <CardTitle>Sentences Saved</CardTitle>
           <CardAction>

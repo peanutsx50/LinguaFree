@@ -10,19 +10,24 @@ function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="p-10 w-full h-full">
-          <div className="flex pb-8">
-            <div className="bg-[#4D3885] h-14 w-14 rounded-md flex justify-center items-center mr-4">
-              <BookIcon size={28} />
+        <div className="w-[400px] h-fit overflow-hidden">
+          <header className="dark:bg-gradient-to-b from-[#4D3885]/30 to-[#2B1C57]/0 py-3">
+            <div className="container mx-auto flex items-center gap-4 px-3">
+              <div className="text-primary-foreground p-3 rounded-lg dark:bg-[#4D3885]">
+                <BookIcon className="h-8 w-8 text-white" />
+              </div>
+              <div>
+                <h1 className="text-2xl md:text-4xl font-bold font-headline">
+                  Linguafree
+                </h1>
+                <p className="text-sm md:text-base text-muted-foreground">
+                  Learn from YouTube captions
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col justify-center">
-              <h1 className="text-3xl font-bold">LinguaFree</h1>
-              <h1>Learn from YouTube captions</h1>
-            </div>
-          </div>
-
-          <div className="px-5">
-            <div className="pb-5">
+          </header>
+          <div className="px-3">
+            <div className="pb-2">
               <Tabs defaultValue="dashboard" className="w-full">
                 <TabsList>
                   <TabsTrigger value="dashboard">Dashboard</TabsTrigger>
@@ -45,32 +50,11 @@ function App() {
               </Tabs>
             </div>
 
-            <div className="flex justify-center items-center w-full h-20 dark:bg-[#4D3885]/20 dark:border dark:border-[#4D3885]/40 rounded-md">
-              <h1 className="text-lg">
+            <div className="px-3 mb-2 flex justify-center items-center w-full h-20 dark:bg-[#4D3885]/20 dark:border dark:border-[#4D3885]/40 rounded-md">
+              <h1 className="text-sm text-center">
                 Go to YouTube and activate Linguafree to start saving
                 vocabulary!
               </h1>
-            </div>
-
-            <div className="">
-              <h1 className="text-xl font-semibold mb-2">How to Learn</h1>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
-                <li>
-                  <strong>Review saved words:</strong> Use the "Words" tab to
-                  browse your vocabulary. Create flashcards to test your
-                  knowledge.
-                </li>
-                <li>
-                  <strong>Practice saved sentences:</strong> Visit the
-                  "Sentences" tab to see your words in context. Use the AI tool
-                  to perfect translations.
-                </li>
-                <li>
-                  <strong>Export your data:</strong> Go to the "Export" tab to
-                  download your word and sentence lists for offline use with
-                  other apps.
-                </li>
-              </ul>
             </div>
           </div>
         </div>

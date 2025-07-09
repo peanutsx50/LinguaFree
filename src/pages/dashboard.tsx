@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { sentenceData, wordData } from "@/utils/constants";
 import { BookIcon } from "lucide-react";
 
 export default function DashboardPage() {
@@ -18,7 +19,9 @@ export default function DashboardPage() {
             <BookIcon size={16} />
           </CardAction>
         </CardHeader>
-        <CardContent className="font-bold text-2xl">5</CardContent>
+        <CardContent className="font-bold text-2xl">
+          {wordData.length}
+        </CardContent>
         <CardFooter>
           <p className="text-muted-foreground text-sm">
             Total vocabulary words in your collection
@@ -33,7 +36,9 @@ export default function DashboardPage() {
             <BookIcon size={16} />
           </CardAction>
         </CardHeader>
-        <CardContent className="font-bold text-2xl">3</CardContent>
+        <CardContent className="font-bold text-2xl">
+          {sentenceData.length}
+        </CardContent>
         <CardFooter>
           <p className="text-muted-foreground text-sm">
             Total example sentences you have saved

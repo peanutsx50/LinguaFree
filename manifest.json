@@ -9,6 +9,18 @@
     "default_popup": "index.html",
     "default_title": "LinguaFree"
   },
+  "content_scripts": [
+    {
+      "js": ["src/content.tsx"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*.png"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ],
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",

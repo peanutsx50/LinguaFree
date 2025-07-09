@@ -1,24 +1,7 @@
 // src/ToggleButton.tsx
 
 import { createRoot } from "react-dom/client";
-
-function SubtitleButton() {
-  return (
-    <button
-      onClick={() => alert("React button clicked")}
-      style={{
-        background: "transparent",
-        border: "none",
-        color: "white",
-        fontSize: "18px",
-        marginLeft: "8px",
-        cursor: "pointer",
-      }}
-    >
-      💬
-    </button>
-  );
-}
+import { Button } from "./components/ui/button";
 
 export function injectReactButton() {
   const observer = new MutationObserver(() => {
@@ -30,7 +13,7 @@ export function injectReactButton() {
       controls.insertBefore(container, controls.children[0]);
 
       const root = createRoot(container);
-      root.render(<SubtitleButton />);
+      root.render(<Button variant={"secondary"}>Hello world</Button>);
 
       observer.disconnect();
     }

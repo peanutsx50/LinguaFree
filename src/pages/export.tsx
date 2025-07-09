@@ -32,18 +32,24 @@ export default function ExportPage() {
           <div className="space-y-4 rounded-lg border p-4">
             <h3 className="text-sm font-medium">Content to Export</h3>
             <div className="flex items-center justify-between">
-              <Label htmlFor="export-words" className="flex flex-col gap-1">
+              <Label
+                htmlFor="export-words"
+                className="flex flex-col gap-1 w-full items-start"
+              >
                 <span>Words</span>
                 <span className="text-xs text-muted-foreground">5 saved</span>
               </Label>
               <Switch id="export-words" />
             </div>
             <div className="flex items-center justify-between">
-              <Label htmlFor="export-sentences" className="flex flex-col gap-1">
+              <Label
+                htmlFor="export-words"
+                className="flex flex-col gap-1 w-full items-start"
+              >
                 <span>Sentences</span>
                 <span className="text-xs text-muted-foreground">5 saved</span>
               </Label>
-              <Switch id="export-sentences" />
+              <Switch id="export-words" />
             </div>
           </div>
           <div className="space-y-2">

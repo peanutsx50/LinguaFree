@@ -18,7 +18,7 @@ function App() {
               </div>
               <div>
                 <h1 className="text-2xl md:text-4xl font-bold font-headline">
-                  Linguafree
+                  LinguaFree
                 </h1>
                 <p className="text-sm md:text-base text-muted-foreground">
                   Learn from YouTube captions

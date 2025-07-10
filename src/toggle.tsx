@@ -5,12 +5,12 @@ import { Button } from "./components/ui/button";
 
 export function injectReactButton() {
   const observer = new MutationObserver(() => {
-    const controls = document.querySelector(".ytp-right-controls");
+    const controls = document.querySelector(".ytp-left-controls");
 
     if (controls && !document.querySelector("#react-subtitle-button")) {
       const container = document.createElement("div");
       container.id = "react-subtitle-button";
-      controls.insertBefore(container, controls.children[0]);
+      controls.insertBefore(container, controls.children[3]);
 
       const root = createRoot(container);
       root.render(<Button variant={"secondary"}>Hello world</Button>);

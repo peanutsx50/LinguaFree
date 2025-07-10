@@ -1,7 +1,7 @@
 // src/ToggleButton.tsx
 
 import { createRoot } from "react-dom/client";
-import { Button } from "./components/ui/button";
+import { Button } from "./ui/button";
 
 export function injectReactButton() {
   const observer = new MutationObserver(() => {
